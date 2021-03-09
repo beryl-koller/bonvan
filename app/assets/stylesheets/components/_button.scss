@@ -1,0 +1,11 @@
+.btn-main {
+    color: white;
+    background-color: $prussian-blue;
+    padding: 10px 26px;
+    border-radius: 50px;
+
+    &:hover {
+        color: white;
+        background-color: rgba($prussian-blue, .8);
+    }
+}
