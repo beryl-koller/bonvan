@@ -1,11 +1,11 @@
-.btn-primary {
+.btn-main {
     color: white;
-    background: $prussian-blue;
+    background-color: $prussian-blue;
     padding: 10px 26px;
     border-radius: 50px;
-    transition: opacity 0.2s;
-}
 
-.btn-blue :hover {
-    opacity: 0.6;
+    &:hover {
+        color: white;
+        background-color: rgba($prussian-blue, .8);
+    }
 }
