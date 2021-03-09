@@ -13,8 +13,13 @@ class VansController < ApplicationController
 
     def create
       @van = Van.new(van_params)
-      @van.save
-      redirect_to van_path(@van)
+      @van.user = current_user
+      if @van.save
+        # redirect_to van_path(@van)
+        redirect_to root_path
+      else
+        render :new
+      end
     end
 
     private
