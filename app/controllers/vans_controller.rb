@@ -13,13 +13,18 @@ class VansController < ApplicationController
 
     def create
       @van = Van.new(van_params)
-      @van.save
-      redirect_to van_path(@van)
+      @van.user = current_user
+      if @van.save
+        # redirect_to van_path(@van)
+        redirect_to root_path
+      else
+        render :new
+      end
     end
 
     private
 
   def van_params
-    params.require(:van).permit(:brand, :model, :passengers, :location, :description, :price_per_night)
+    params.require(:van).permit(:brand, :model, :passengers, :location, :description, :price_per_night, :photos)
   end
 end
