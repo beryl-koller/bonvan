@@ -1,1 +1,31 @@
-<p>salut<p>
+<div class="container form-container-center">
+<h2 class="text-center">Add my van</h2>
+  <%= simple_form_for(@van) do |f| %>
+    <div class="input-group mb-3">
+      <%= f.label :brand, class: "input-group-text" %>
+      <%= f.text_field :brand, class: "form-control" %>
+    </div>
+    <div class="input-group mb-3">
+      <%= f.label :model, class: "input-group-text" %>
+      <%= f.text_field :model, class: "form-control" %>
+    </div>
+    <div class="input-group mb-3">
+      <%= f.label :passengers, class: "input-group-text" %>
+      <%= f.text_field :passengers, class: "form-control" %>
+    </div>
+    <div class="input-group mb-3">
+      <%= f.label :description, class: "input-group-text" %>
+      <%= f.text_field :description, class: "form-control" %>
+    </div>
+    <div class="input-group mb-3">
+      <%= f.label :price_per_night, class: "input-group-text" %>
+      <%= f.text_field :price_per_night, class: "form-control" %>
+    </div>
+    <div class="input-group mb-3">
+      <%= f.label :location, class: "input-group-text" %>
+      <%= f.text_field :location, class: "form-control" %>
+    </div>
+      <%= f.input :photos, as: :file %>
+      <%= f.submit 'Add my van!', class: "btn btn-red" %>
+  <% end %>
+</div>
