@@ -1,6 +1,7 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background-color:$warm-black;
+
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -10,3 +11,21 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.navbar-brand {
+  color: white;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: white;
+
+}
+
+.bonvan{
+  color: white;
+  margin-left: 10px;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
