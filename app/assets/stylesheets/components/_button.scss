@@ -1,11 +1,14 @@
 .btn-main {
-    color: white;
+    color: $steel-teal;
     background-color: $prussian-blue;
-    padding: 10px 26px;
+    padding: 10px 20px;
     border-radius: 50px;
+    display: inline-block;
+
 
     &:hover {
-        color: white;
+        color: $steel-teal ;
         background-color: rgba($prussian-blue, .8);
     }
 }
+
