@@ -1,0 +1,30 @@
+ <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <%= link_to root_path, class: "navbar-brand d-flex align-items-center" do %>
+    <%= image_tag "https://res.cloudinary.com/df0stqosw/image/upload/v1615323395/Bonvan/logo-voyage-plat-vintage_23-2148177242_rmzho6.jpg", class: "avatar"%>
+  <h2 class="bonvan" >Bonvan</h2>
+  <% end %>
+
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+      </li>
+      <li class="dropdown">
+  <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Current user
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <%= link_to "Book a van","#", class: "dropdown-item" %>
+          <%= link_to "Add a van", new_van_path, class: "dropdown-item" %>
+          <%= link_to "logout", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+  </div>
+      </li>
+    </ul>
+  </div>
+</div>
