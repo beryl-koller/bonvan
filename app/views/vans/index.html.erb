@@ -1,1 +1,8 @@
-<p>salut<p>
+
+    <ul>
+  <% @vans.each do |van| %>
+   
+    <%=  van.model  %>
+     <%=  van.photos %>
+  <% end %>
+</ul>
