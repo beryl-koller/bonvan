@@ -17,17 +17,18 @@
       <li class="nav-item active">
         <%= link_to "Login", new_user_session_path, class: "nav-link" %>
       </li>
-      <li class="nav-item">
-        <%= link_to "Current user", "#", class: "nav-link" %>
-      </li>
-      <li class="nav-item dropdown">
-        <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <%= link_to "Book a van","#", class: "dropdown-item" %>
+      <li class="dropdown">
+  <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Current user
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <%= link_to "Book a van","#", class: "dropdown-item" %>
           <%= link_to "Add a van", new_van_path, class: "dropdown-item" %>
           <%= link_to "logout", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-        </div>
+  </div>
       </li>
     </ul>
   </div>
 </div>
+
+
