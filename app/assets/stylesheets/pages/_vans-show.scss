@@ -1,46 +1,27 @@
 .van-model {
   color: $steel-teal;
-  font-size: 16px;
+  font-size: 32px;
   font-weight: bold;
-  margin: 0;
-  padding: 5px;
-}
-
-.map {
-  color: $warm-black;
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-  padding: 5px;
+  margin: 20px 0 0 0;
 }
 
 .owner {
   color: $steel-teal;
   font-size: 16px;
-  font-weight: bold;
-  margin: 0;
+  font-weight: normal;
 }
 
 .card-trip-infos {
   padding: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
 }
 
 .card-trip-pricing {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
 }
 
-.container p {
-  font-size: 12px;
-  opacity: .7;
-  margin: 0;
+.show-img {
+  max-width: 100%;
 }
 

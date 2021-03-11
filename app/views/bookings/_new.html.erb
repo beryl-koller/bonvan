@@ -1,8 +1,7 @@
 <div class="container form-container">
-<h2 class="text-center">New booking</h2>
   <%= simple_form_for [@van, @booking] do |f| %>
     <%= f.input :start, as: :string, input_html: {class: "datepicker"} %>
     <%= f.input :end, as: :string, input_html: {class: "datepicker"} %>
-    <%= f.submit %>
+    <%= f.submit 'Book it!', class: "btn-main" %>
   <% end %>
 </div>
