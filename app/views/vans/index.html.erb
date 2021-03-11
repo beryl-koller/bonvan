@@ -1,4 +1,18 @@
 <div class="content">
+   <div class="cards">
+
+        <div class="card">
+          <%= cl_image_tag @van.photos.first.key, height: 300, width: 400, crop: :fill %>
+            <%= @van.user.full_name %>
+            <%= @van.description %>
+            <%= @van.price_per_night %>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="content">
       <div class="cards">
         <div class="card" style="background-image: url(http://kitt.lewagon.com/placeholder/cities/rio)">
           Rio
