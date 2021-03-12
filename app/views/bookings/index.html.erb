@@ -1,0 +1,18 @@
+<div class="container booking-container">
+        <h2 class="text-center booking-title">Mes réservations</h2>
+        <% @bookings.each do |booking| %>
+            <% if booking.user == current_user %>
+            
+            <div class="card-booking">
+                <%= cl_image_tag booking.van.photos.first.key, class: "card-booking-img" %>
+                <div class="card-booking-infos">
+                   <h2><%= booking.van.brand %></h2>
+                   <p><%= booking.van.model %></p>
+                   <p>Du <%= booking.start %> au <%= booking.end %></p>
+                   <p>Prix total: <%= booking.price %>€</p>
+                </div>
+            </div>
+            <% end %>
+        <% end %>
+</div>
+
