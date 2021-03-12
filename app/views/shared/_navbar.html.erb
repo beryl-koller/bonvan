@@ -13,7 +13,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
     <% if user_signed_in? %>
-<li class="dropdown">
+      <li class="dropdown">
         <button class="btn-navbar" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <%= current_user.first_name.capitalize %>
         </button>
@@ -22,11 +22,11 @@
           <%= link_to "Se déconnecter", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
         </div>
       </li>
-<% else  %>
-      <li class="btn-navbar nav-item active">
-        <%= link_to "Se connecter", new_user_session_path, class: "nav-link", id: "login-btn" %>
+    <% else  %>
+      <li class="nav-item active">
+        <%= link_to "Se connecter", new_user_session_path, class: "nav-link btn-navbar", id: "login-btn"%>
       </li>
-      <%  end %>
+    <%  end %>
     </ul>
   </div>
 </div>

@@ -10,8 +10,23 @@
 
     &:hover {
         color: white  ;
-        background-color: rgba($prussian-blue, .8);
+        background-color: rgba($prussian-blue, .9);
         text-decoration: none;
     }
+}
+
+.btn-navbar {
+    background-color: $steel-teal;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 5px 15px;
+    display: inline-block;
+    border-color: none !important;
+    border-style: none !important;
+}
+
+#login-btn {
+    color: white;
 }
 
