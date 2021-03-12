@@ -1,11 +1,9 @@
-
-
 // Import Google fonts
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;500;600&display=swap');
-// Define fonts for body and headers
-$body-font: 'Cormorant Unicase', 'serif';
-$headers-font: 'Cormorant Unicase', 'serif';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
 
+// Define fonts for body and headers
+$body-font: 'Poppins', 'sans-serif';
+$headers-font: 'Poppins', 'sans-serif';
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {
