@@ -29,9 +29,19 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 import { initFlatpickr } from "../plugins/flatpickr";
 
+const initFooterFix = () => {
+  const footer = document.querySelector('.footer');
+  if (footer) {
+    if (footer.offsetTop <= window.innerHeight) {
+        footer.classList.add('fixed-bottom');
+      } else {
+        footer.classList.remove('fixed-bottom');
+    }
+  }
+}
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
-  // initSelect2();
   initFlatpickr();
+  initFooterFix();
 });

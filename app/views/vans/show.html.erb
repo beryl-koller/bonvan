@@ -1,21 +1,21 @@
 
 <div class="container">
    <div class="row">
-    <div class="col-sm-12 col-md-8">
-      <h2 class= "van-brand"><%= @van.brand %></h2>
-      <p class= "owner"><%= @van.user.full_name %></p>
-      <%= cl_image_tag @van.photos.first.key, class: "show-img" %>
-        <div class="card-trip-infos">
-          <p class="model">Modèle: <%=@van.model%>, idéal pour <%=@van.passengers%> passagers</p>
-          <p class="description"><%= @van.description %></p>
-          <p class="card-trip-pricing"><%= @van.price_per_night %>€ / nuit</p>
-        </div>
-      </div>
-    <div class="col-sm-12 col-md-4">
-      <%= render 'bookings/new' %>
-    </div>
       <div class="col-sm-12 col-md-8">
-      <p class= "place"><strong>Emplacement: </strong><%=@van.location%></p>
-
+        <h2 class= "van-brand"><%= @van.brand %></h2>
+        <p class= "owner"><%= @van.user.full_name %></p>
+        <%= cl_image_tag @van.photos.first.key, class: "show-img" %>
+          <div class="card-trip-infos">
+            <p class="model">Modèle: <%=@van.model%>, idéal pour <%=@van.passengers%> passagers</p>
+            <p class="description"><%= @van.description %></p>
+            <p class="card-trip-pricing"><%= @van.price_per_night %>€ / nuit</p>
+          </div>
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <%= render 'bookings/new' %>
+      </div>
+      <div class="col-sm-12 col-md-8">
+          <p class= "place"><strong>Emplacement: </strong><%=@van.location%></p>
+      </div>
     </div>
 </div>
