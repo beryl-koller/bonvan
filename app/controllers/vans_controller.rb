@@ -16,8 +16,7 @@ class VansController < ApplicationController
       @van = Van.new(van_params)
       @van.user = current_user
       if @van.save
-        # redirect_to van_path(@van)
-        redirect_to root_path
+        redirect_to van_path(@van)
       else
         render :new
       end
