@@ -1,7 +1,7 @@
 <div class="container content">
 <div class="cards">
         <% @vans.each do |van| %>
-            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('<%= cl_image_path van.photos.first.key %>')">
+            <div class="card-category" style="background-image: linear-gradient(rgba(0,67,70,0.2), rgba(0,67,70,0.2)), url('<%= cl_image_path van.photos.first.key %>')">
                 <h2><%= link_to van.brand, van_path(van), id: 'card-title' %></h2>
             </div>
         <% end %>
